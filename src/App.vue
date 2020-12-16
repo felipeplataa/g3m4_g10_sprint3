@@ -103,6 +103,11 @@ export default {
         this.$router.push({ name: "ver" });
       }
     },
+     beforeCreate: function () {
+      if (this.$route.name != "verProductos") {
+      }
+      this.$router.push({ name: "verProductos" });
+    },
   },
 };
 </script>
