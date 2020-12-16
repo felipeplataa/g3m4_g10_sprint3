@@ -45,7 +45,7 @@ export default {
             costo_prod_ent: this.costo_prod_ent
             }
             axios
-            .put("http://127.0.0.1:8000/producto/entrada/",ingreso)
+            .put("https://g3m4-g10-catalogo-app.herokuapp.com/entrada/",ingreso)
             .then(respuesta=> {
                alert("Producto ingresado a inventario correctamente");
             })
